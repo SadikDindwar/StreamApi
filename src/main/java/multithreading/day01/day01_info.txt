@@ -1,0 +1,57 @@
+Day 01 : Basics of Multithreading.
+
+Process vs Thread
+
+Process : Process is an independent program execution unit. process has its own memory.
+Thread : Thread is a single line of execution.process is a lightweight sub-unit of the process. Thread shares memory space.
+
+
+
+Multithreading
+
+Multithreading is a feature which allows a program to rum two or more parts called threads at the same time, so tasks can be done in parallel and more
+efficiently.
+
+
+
+Thread Life Cycle
+
+In thread life cycle we can mainly have 5 states 1.New state 2.Runnable state 3.Running state 4.Wait/Sleep state 5.Terminated
+1.The thread is in New state when the thread object is created(new Thread()) but not started.
+2.The thread is in Runnable state when the start() method is called and the  thread is ready to run,waiting for CPU allocation.
+3.The thread is in Running state when the thread is executing its run() method.
+4.The thread is in sleep/wait state when the sleep() or wait method is called.
+5.The thread is in Terminated state when the thread completes its execution.
+so these are the different states of thread life cycle.
+
+
+
+Creating Threads.
+
+There are three ways we can create threads 1.By extending Thread class 2.By implementing Runnable Interface 3.By using lambda.
+1.By Extending Thread : refer the code in code section
+Thread can be created by extending Thread class or any Thread type class,thread type class means a class that is a child class of Thread class.
+2.By Implementing Runnable interface : refer the code in code section.
+Thread can also be created by implementing runnable interface.
+3.By using Lambda : refer the code in code section.
+Thread can also be created using Lambda after Java 8.
+
+
+
+Some of the Thread Methods.
+
+1.join(): join() method makes current thread to wait for another thread to finish before continuing.
+2.yield() : yield() method is used to signal that current thread is willing to pause and give up cpu time to other threads.
+   but this is just a signal its not guaranteed, actual scheduling depends on jvm and os.
+3.interrupt() : interrupt() is used request a thread to stop its current blocking operation like sleep() and wait().
+4.isAlive() : Checks if a thread is currently running or runnable.
+5.getState() : Returns the current state of a thread.
+6.getName() / setName() : Identify threads using names (useful in logs and debugging).
+7.setPriority() / getPriority() : used to set and get the priority of threads and based on the priority it will be
+ decided which thread will get cpu time first.Suggest the importance of a thread to the scheduler.
+  Range: 1 (MIN_PRIORITY) to 10 (MAX_PRIORITY), default 5
+
+
+
+
+

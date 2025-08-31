@@ -1,0 +1,5 @@
+Day 02 : Thread Safety & Synchronization
+
+Race Condition
+
+Race condition is a condition where multiple threads access shared data simultaneously and the final outcome is inconsistent or incorrect.
