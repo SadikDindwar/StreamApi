@@ -1,6 +1,6 @@
 package stream_api_questions;
 
-// Give a list of String group the String based on there first character using Stream Api.
+// Given a list of String group the String based on there first character using Stream Api.
 
 import java.util.Arrays;
 import java.util.List;
