@@ -22,7 +22,7 @@ public class StreamApi28 {
                         Map.Entry::getKey,              // key mapper
                         Map.Entry::getValue,            // value mapper
                         (e1, e2) -> e1,                 // merge function (Needed in case of duplicates)
-                        LinkedHashMap::new              // storing in LInkedHashMap to keep order of insertion
+                        LinkedHashMap::new              // storing in LinkedHashMap to keep order of insertion
                 ));
         System.out.println(sortedMap);
 
