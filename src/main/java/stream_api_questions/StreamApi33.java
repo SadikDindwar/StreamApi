@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class StreamAPI33 {
+public class StreamApi33 {
     public static void main(String[] args) {
         int [] arr = {54,84,7,4,21,64,84,50,84,54,84,21,4,84,54,84,96,78,41,52,84,21,78,54,84,7,21};
         int k = 3;
